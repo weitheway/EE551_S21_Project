@@ -7,34 +7,45 @@
     
     <body>
         <header>
-            <div class="title">About Me</div>
+            <div class="title">
+                <a href="{{ url_for('home') }}">Wei's Project</a>
+            </div>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="{{ url_for('aboutme') }}">About Me</a>
+                </div>
+            </div>
         </header>
-    
-        <div class="image">
-            <img class="logo" src="/static/assets/Attila.png" width="300px" height="300px"/>
-        
+
+        <div class="container">
+            <div class="image">
+                <img class="logo" src="/static/assets/Attila.png" width="300px" height="300px"/>
+            </div>
+            <div>
+                <h3>Some Info About Me</h3>
+                <p>Hello there! I'm Wei! Picture's not right just yet but it'll be updated shortly!</p>
+            </div>
         </div>
-    
+
         <footer>
             <div class="footer-container">
                 <div class="left">
-                    <a class="footer-item">
-                        Item 1
-                    </a>
-                    <a class="footer-item">
-                        Item 2
-                    </a>
-                </div>
+                        <a href="https://github.com/weitheway" class="footer-item">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/wen-wei-zheng-030264127/" class="footer-item">
+                            LinkedIn
+                        </a>
+                    </div>
                 <div class="right">
                     <div class="footer-section">
                         <a class="footer-item">
-                            Item 3
+                            Contact Me:
                         </a>
                         <a class="footer-item">
-                            Item 4
+                            wzheng4@stevens.edu
                         </a>
                     </div>
-
                 </div>
             </div>
         </footer>

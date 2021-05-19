@@ -1,7 +1,10 @@
 html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+a, u {
+    text-decoration: none;
+    color: black;
+}
 header{
     max-width: 640px;
     margin: 50px auto;
@@ -29,6 +32,10 @@ header .menu .menu-item {
 .container {
     max-width: 450px;
     margin: 0 auto;
+}
+
+.container .welcome{
+    border-bottom: double;
 }
 
 form{
@@ -115,4 +122,5 @@ footer .footer-section{
 
 footer .footer-item{
     margin-bottom: 5px;
+    color: white;
 }
