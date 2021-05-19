@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="/static/css/style.css"/>
+    </head>
+    
+    <body>
+        <div class="page">
+            <header>
+                <div class="title">Wei's Project</div>
+                <div class="menu">
+                    <div class="menu-item">About Me</div>
+                </div>
+            </header>
+        
+            <div class="container">
+                
+                <form method="POST">
+                    <textarea name="content"></textarea>
+                    <input type="submit"/>
+                </form>
+    
+                <div class="entries">
+                    {% for entry in entries %}
+                    <div class="entry">
+                        <div class="entry-title">
+                            {{ entry[0]|truncate(30,true) }}
+                            <span class="entry-date">
+                                - {{entry[1]}}
+                            </span>
+                        </div>
+                        <p class="entry-content">
+                            {{entry[0]}}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            
+            </div>
+        
+            <footer>
+                <div class="footer-container">
+                    <div class="left">
+                        <a class="footer-item">
+                            Item 1
+                        </a>
+                        <a class="footer-item">
+                            Item 2
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="footer-section">
+                            <a class="footer-item">
+                                Item 3
+                            </a>
+                            <a class="footer-item">
+                                Item 4
+                            </a>
+                        </div>
+    
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
